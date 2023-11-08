@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Финансовый калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Финансовый калькулятор</h1>
+    <form id="calculator-form">
+        <label for="loan-amount">Сумма кредита:</label>
+        <input type="number" id="loan-amount" placeholder="Введите сумму кредита" required><br><br>
+
+        <label for="interest-rate">Процентная ставка (%):</label>
+        <input type="number" id="interest-rate" placeholder="Введите процентную ставку" required><br><br>
+
+        <label for="loan-term">Срок кредита (в месяцах):</label>
+        <input type="number" id="loan-term" placeholder="Введите срок кредита" required><br><br>
+
+        <input type="submit" value="Рассчитать">
+    </form>
+
+    <div id="result">
+        <h2>Результаты расчета:</h2>
+        <p id="monthly-payment">Ежемесячный платеж: $0.00</p>
+        <p id="total-payment">Общая выплата: $0.00</p>
+        <p id="total-interest">Общий процент: $0.00</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
